@@ -24,10 +24,10 @@
                 <div class="box">
                     <img src="assets/image/logo/atlas-forge-logo.png" class="hero-logo" alt="">
                     <h1>
-                        Fashion & Lifestyle Incubation Cell
+                        Fashion & Lifestyle <br> Incubation Cell
                     </h1>
-                    <button>+ Know More</button>
                 </div>
+                <button>+ Know More</button>
             </div>
 
         </div>
