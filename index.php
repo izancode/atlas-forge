@@ -14,9 +14,67 @@
 
 
     <div class="container-fluid p-0">
+        <div class="row m-0 w-100">
+            <div class="col-12 p-0">
+                <header>
+                    <nav>
+                        <div class="logo">
+
+                            <img src="assets/image/logo/atlas-forge-logo.png" class="">
+
+                        </div>
+
+                        <div class="menu">
+
+                            <ul>
+                                <li>
+                                    <a href="#about">
+                                        <span> About</span>
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#mentors">
+                                        <span class="">Our programme</span>
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#rules">
+                                        <span>Key Areas</span>
+
+
+                                    </a>
+                                </li>
+
+
+
+                            </ul>
+                        </div>
+                        <div class="button">
+
+                            <a href="#" target="_blank">APPLY NOW</a>
+                            <div class="hamburger  d-block d-lg-none" onclick="openNavigation()">
+                                <img class="w-100 img-fluid" src="assets/image/icon/hamburger.svg" width="36" height="36" alt="">
+                            </div>
+                        </div>
+
+
+
+
+
+                    </nav>
+                </header>
+            </div>
+        </div>
+
         <div class="row heroBanner">
 
             <div class="col-lg-12 col-xxl-12 p-0">
+
+
+
+
                 <img src="assets/image/hero-banner/shape/first.png" class="first-shape" alt="">
                 <img src="assets/image/hero-banner/shape/second.png" class="second-shape" alt="">
                 <img src="assets/image/hero-banner/shape/third.png" class="third-shape" alt="">
