@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 console.log("Javascript is running");
 let lastScrollY = window.scrollY;
 
@@ -13,11 +14,14 @@ window.addEventListener("scroll", function () {
 
   lastScrollY = currentScrollY;
 });
+=======
+>>>>>>> 3f40519cfb6c64b524ba3d9286f9abb2f2d7ec9e
 function openNavigation() {
   const nav = document.querySelector("header nav .menu");
   const icon = document.querySelector(".hamburger img");
   nav.classList.toggle("menu-active");
   if (nav.classList.contains("menu-active")) {
+<<<<<<< HEAD
     icon.src = "assets/images/icon/close.svg";
   } else {
     icon.src = "assets/images/icon/hamburger.svg"; // Change back to hamburger icon when menu is closed
@@ -51,23 +55,41 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+=======
+    icon.src = "assets/image/icon/close.svg";
+  } else {
+    icon.src = "assets/image/icon/hamburger.svg"; // Change back to hamburger icon when menu is closed
+  }
+}
+>>>>>>> 3f40519cfb6c64b524ba3d9286f9abb2f2d7ec9e
 document.addEventListener("DOMContentLoaded", (event) => {
   gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
   const mm = gsap.matchMedia();
 
+<<<<<<< HEAD
   function createTimeline(options) {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".page1",
         start: options.scrollStart,
         end: options.scrollEnd,
+=======
+  // Timeline banane wala function (common animation flow)
+  function createTimeline(options) {
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".heroBanner",
+        start: "top top",
+        end: options.scrollEnd, // har viewport ka alag scroll length
+>>>>>>> 3f40519cfb6c64b524ba3d9286f9abb2f2d7ec9e
         scrub: true,
         pin: true,
         // markers: true,
       },
     });
 
+<<<<<<< HEAD
     tl.fromTo(
       ".page1",
       { backgroundImage: "url('assets/images/herobanners/1.png')" },
@@ -95,10 +117,35 @@ document.addEventListener("DOMContentLoaded", (event) => {
         opacity: options.thirdShape.endOp,
         duration: options.thirdShape.endDur,
         ease: options.thirdShape.endEase,
+=======
+    // Background change
+    tl.fromTo(
+      ".heroBanner",
+      { backgroundImage: "url('assets/image/hero-banner/background/1.png')" },
+      { backgroundImage: "url('assets/image/hero-banner/background/2.png')" },
+      "<"
+    );
+
+    // First shape
+    tl.fromTo(
+      ".first-shape",
+      {
+        x: options.firstShape.startX,
+        y: options.firstShape.startY,
+        opacity: 0.7,
+      },
+      {
+        x: options.firstShape.x,
+        y: options.firstShape.y,
+        opacity: 0,
+        duration: 1.5,
+        ease: "power2.inOut",
+>>>>>>> 3f40519cfb6c64b524ba3d9286f9abb2f2d7ec9e
       },
       "<"
     );
 
+<<<<<<< HEAD
     tl.fromTo(
       "nav",
 
@@ -110,10 +157,25 @@ document.addEventListener("DOMContentLoaded", (event) => {
         y: options.navShape.endY,
         duration: options.navShape.endDur,
         ease: options.navShape.endEase,
+=======
+    // header nav
+    tl.fromTo(
+      "nav",
+      {
+        x: options.navShape.startX,
+        y: options.navShape.startY,
+      },
+      {
+        x: options.navShape.x,
+        y: options.navShape.y,
+        duration: 1.5,
+        ease: "power2.inOut",
+>>>>>>> 3f40519cfb6c64b524ba3d9286f9abb2f2d7ec9e
       },
       "<"
     );
 
+<<<<<<< HEAD
     tl.fromTo(
       ".page1 svg path:nth-child(2)",
       { opacity: options.secondShape.startOp },
@@ -124,10 +186,29 @@ document.addEventListener("DOMContentLoaded", (event) => {
         opacity: options.secondShape.endOp,
         duration: options.secondShape.endDur,
         ease: options.secondShape.endEase,
+=======
+    // Second shape
+    tl.fromTo(
+      ".second-shape",
+      {
+        x: options.secondShape.startX,
+        y: options.secondShape.startY,
+        opacity: 0.7,
+        scale: 1,
+      },
+      {
+        x: options.secondShape.x,
+        y: options.secondShape.y,
+        scale: options.secondShape.scale,
+        opacity: 0.9,
+        duration: 1.5,
+        ease: "power2.inOut",
+>>>>>>> 3f40519cfb6c64b524ba3d9286f9abb2f2d7ec9e
       },
       "<"
     );
 
+<<<<<<< HEAD
     //  text   here
     tl.to(".one", { opacity: 1, scale: 1, duration: 2 })
       .to(".one", { opacity: 0, scale: 0.9, duration: 1 })
@@ -364,4 +445,210 @@ document.addEventListener("DOMContentLoaded", (event) => {
   //     },
   //   });
   // });
+=======
+    // Third shape
+    tl.fromTo(
+      ".third-shape",
+      {
+        x: options.thirdShape.startX,
+        y: options.thirdShape.startY,
+        opacity: 0.9,
+      },
+      {
+        x: options.thirdShape.x,
+        y: options.thirdShape.y,
+        opacity: 0,
+        duration: 1.5,
+        ease: "power2.inOut",
+      },
+      "<"
+    );
+
+    // Text fade out and change
+    tl.to(
+      ".heroBanner h1",
+      { opacity: 0, duration: 0.5, ease: "power2.out" },
+      "<"
+    )
+      .fromTo(
+        ".heroBanner h1",
+        {
+          text: options.text.old,
+          fontSize: options.text.oldSize,
+          lineHeight: options.text.oldLineHeight,
+
+          duration: 0.01,
+        },
+        {
+          text: options.text.new,
+          fontSize: options.text.newSize,
+          lineHeight: options.text.newLineHeight,
+
+          duration: 0.01,
+        }
+      )
+      .to(
+        ".heroBanner h1",
+        { opacity: 1, duration: 0.8, ease: "power2.in" },
+        "<"
+      );
+
+    // Reverse shapes (animation wapas)
+    tl.fromTo(
+      ".first-shape",
+      { x: options.firstShape.x, y: options.firstShape.y, opacity: 0 },
+      {
+        x: options.firstShape.startX,
+        y: options.firstShape.startY,
+        opacity: 0.7,
+        duration: 1.5,
+        ease: "power2.inOut",
+      }
+    );
+    tl.fromTo(
+      ".second-shape",
+      {
+        x: options.secondShape.x,
+        y: options.secondShape.y,
+        scale: options.secondShape.scale,
+        opacity: 0.9,
+      },
+      {
+        x: options.secondShape.startX,
+        y: options.secondShape.startY,
+        opacity: 0.7,
+        scale: 1,
+        duration: 1.5,
+        ease: "power2.inOut",
+      },
+      "<"
+    );
+    tl.fromTo(
+      ".third-shape",
+      { x: options.thirdShape.x, y: options.thirdShape.y, opacity: 0 },
+      {
+        x: options.thirdShape.startX,
+        y: options.thirdShape.startY,
+        opacity: 0.9,
+        duration: 1.5,
+        ease: "power2.inOut",
+      },
+      "<"
+    );
+
+    // Text reverse
+    tl.to(
+      ".heroBanner h1",
+      { opacity: 0, duration: 0.5, ease: "power2.in" },
+      "<"
+    )
+      .fromTo(
+        ".heroBanner h1",
+        {
+          text: options.text.new,
+          fontSize: options.text.newSize,
+          lineHeight: options.text.newLineHeight,
+
+          duration: 0.01,
+        },
+        {
+          text: options.text.old,
+          fontSize: options.text.oldSize,
+          lineHeight: options.text.oldLineHeight,
+
+          duration: 0.01,
+        }
+      )
+      .to(
+        ".heroBanner h1",
+        { opacity: 1, duration: 0.8, ease: "power2.out" },
+        "<"
+      );
+
+    // Background reverse
+    tl.fromTo(
+      ".heroBanner",
+      { backgroundImage: "url('assets/image/hero-banner/background/2.png')" },
+      { backgroundImage: "url('assets/image/hero-banner/background/1.png')" },
+      "<"
+    );
+
+    return tl;
+  }
+  mm.add("(min-width: 992px) and (max-width: 1280px)", () => {
+    createTimeline({
+      scrollEnd: "+=2000",
+      firstShape: { startX: "0vw", startY: "0vh", x: "40vw", y: "0vh" },
+      navShape: { startX: "0vw", startY: "-12vh", x: "0vw", y: "0vh" },
+      secondShape: {
+        startX: "0vw",
+        startY: "-53vh",
+        x: "24vw",
+        y: "-59vh",
+        scale: 3,
+      },
+      thirdShape: { startX: "-27.5vw", startY: "6vh", x: "40vw", y: "40vh" },
+      text: {
+        old: "Fashion & Lifestyle <br> Incubation Cell",
+        new: "IGNITING IDEAS,<br> FORGING FUTURES.",
+        oldSize: "26px",
+        oldLineHeight: "36px",
+
+        newSize: "40px",
+        newLineHeight: "48px",
+      },
+    });
+  });
+  // 1366px ke liye timeline
+  mm.add("(min-width: 1281px) and (max-width: 1366px)", () => {
+    createTimeline({
+      scrollEnd: "+=2000",
+      firstShape: { startX: "0vw", startY: "0vh", x: "40vw", y: "0vh" },
+      navShape: { startX: "0vw", startY: "-9vh", x: "0vw", y: "0vh" },
+      secondShape: {
+        startX: "0vw",
+        startY: "-53vh",
+        x: "16vw",
+        y: "-36vh",
+        scale: 2,
+      },
+      thirdShape: { startX: "32vw", startY: "-69vh", x: "40vw", y: "40vh" },
+      text: {
+        old: "Fashion & Lifestyle <br> Incubation Cell",
+        new: "IGNITING IDEAS,<br> FORGING FUTURES.",
+        oldSize: "36px",
+        oldLineHeight: "48px",
+
+        newSize: "64px",
+        newLineHeight: "72px",
+      },
+    });
+  });
+
+  // 1920px (default) ke liye timeline
+  mm.add("(min-width:1367px)", () => {
+    createTimeline({
+      scrollEnd: "+=2000",
+      firstShape: { startX: "0vw", startY: "0vh", x: "40vw", y: "0vh" },
+      navShape: { startX: "0vw", startY: "-8vh", x: "0vw", y: "0vh" },
+      secondShape: {
+        startX: "1vw",
+        startY: "-65vh",
+        x: "28vw",
+        y: "-72vh",
+        scale: 3,
+      },
+      thirdShape: { startX: "33vw", startY: "-76vh", x: "45vw", y: "45vh" },
+      text: {
+        old: "Fashion & Lifestyle <br> Incubation Cell",
+        new: "IGNITING IDEAS,<br> FORGING FUTURES.",
+        oldSize: "48px",
+        oldLineHeight: "62px",
+
+        newSize: "84px",
+        newLineHeight: "88px",
+      },
+    });
+  });
+>>>>>>> 3f40519cfb6c64b524ba3d9286f9abb2f2d7ec9e
 });
