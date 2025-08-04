@@ -146,7 +146,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
         duration: options.text.textEndDur,
       }
     );
-
     tl.to(
       ".box h1",
       {

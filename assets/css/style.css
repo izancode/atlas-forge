@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-<<<<<<< HEAD
 
 * {
   margin: 0;
@@ -23,18 +22,6 @@ body {
 }
 
 /* header */
-=======
-/* * {
-  outline: 1px solid green; /* Sab elements ka boundary visible hoga */
-} */
-body {
-  max-width: 1920px;
-  margin: 0 auto;
-  /* border: 4px solid red; */
-  font-family: "Roboto", sans-serif;
-  background-color: black;
-}
->>>>>>> 3f40519cfb6c64b524ba3d9286f9abb2f2d7ec9e
 
 header nav {
   display: flex;
@@ -47,26 +34,10 @@ header nav {
   position: fixed;
   left: 0;
   top: 0;
-<<<<<<< HEAD
   z-index: 99;
   width: 100%;
 }
 
-=======
-  z-index: 1;
-  width: 100%;
-}
-
-header .headerScrolledUp {
-  position: fixed;
-  top: 0px;
-  left: 0;
-  width: 100%;
-  height: 75px;
-  background-color: #1269f0;
-  z-index: 2;
-}
->>>>>>> 3f40519cfb6c64b524ba3d9286f9abb2f2d7ec9e
 header nav .logo img {
   width: 126px;
 }
@@ -87,13 +58,9 @@ header nav .menu ul li a {
   color: #493cb5;
   text-decoration: none;
   font-size: 18px;
-<<<<<<< HEAD
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='28' height='29' fill='none' viewBox='0 0 28 29'><path fill='%23fff' d='M6.84 21.83c-.47-.6-1.05-1.82-2.07-3.34-.58-.83-2.01-2.41-2.45-3.23a2.1 2.1 0 0 1-.25-1.67 2.2 2.2 0 0 1 2.39-1.67c.85.18 1.63.6 2.25 1.2.43.41.82.85 1.18 1.32.27.34.33.47.63.85.3.39.5.77.35.2-.11-.83-.31-2.23-.6-3.48-.21-.95-.26-1.1-.46-1.82s-.32-1.32-.54-2.13c-.2-.8-.35-1.62-.46-2.44a4.7 4.7 0 0 1 .43-3.08c.58-.55 1.44-.7 2.17-.37a4.4 4.4 0 0 1 1.57 2.17c.43 1.07.72 2.19.86 3.33.27 1.67.79 4.1.8 4.6 0-.61-.11-1.91 0-2.5.12-.6.54-1.1 1.12-1.33.5-.15 1.02-.19 1.53-.1.52.1.98.4 1.29.83.38.98.6 2 .63 3.05.04-.91.2-1.82.47-2.7.28-.39.68-.67 1.15-.8.55-.1 1.11-.1 1.66 0 .46.15.85.44 1.14.82.35.88.56 1.82.63 2.77 0 .23.12-.65.48-1.24a1.67 1.67 0 1 1 3.17 1.07v3.77c-.06.97-.2 1.94-.4 2.9-.29.85-.7 1.65-1.2 2.38-.8.9-1.48 1.92-1.98 3.02a6.67 6.67 0 0 0 .03 3.2c-.68.07-1.37.07-2.05 0-.65-.1-1.45-1.4-1.67-1.8a.63.63 0 0 0-1.13 0c-.37.64-1.18 1.79-1.75 1.85-1.12.14-3.42 0-5.23 0 0 0 .3-1.66-.39-2.27-.68-.6-1.38-1.3-1.9-1.76l-1.4-1.6Z'/><path stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='2.25' d='M6.84 21.83c-.47-.6-1.05-1.82-2.07-3.34-.58-.83-2.01-2.41-2.45-3.23a2.1 2.1 0 0 1-.25-1.67 2.2 2.2 0 0 1 2.39-1.67c.85.18 1.63.6 2.25 1.2.43.41.82.85 1.18 1.32.27.34.33.47.63.85.3.39.5.77.35.2-.11-.83-.31-2.23-.6-3.48-.21-.95-.26-1.1-.46-1.82s-.32-1.32-.54-2.13c-.2-.8-.35-1.62-.46-2.44a4.7 4.7 0 0 1 .43-3.08c.58-.55 1.44-.7 2.17-.37a4.4 4.4 0 0 1 1.57 2.17c.43 1.07.72 2.19.86 3.33.27 1.67.79 4.1.8 4.6 0-.61-.11-1.91 0-2.5.12-.6.54-1.1 1.12-1.33.5-.15 1.02-.19 1.53-.1.52.1.98.4 1.29.83.38.98.6 2 .63 3.05.04-.91.2-1.82.47-2.7.28-.39.68-.67 1.15-.8.55-.1 1.11-.1 1.66 0 .46.15.85.44 1.14.82.35.88.56 1.82.63 2.77 0 .23.12-.65.48-1.24a1.67 1.67 0 1 1 3.17 1.07v3.77c-.06.97-.2 1.94-.4 2.9-.29.85-.7 1.65-1.2 2.38-.8.9-1.48 1.92-1.98 3.02a6.67 6.67 0 0 0 .03 3.2c-.68.07-1.37.07-2.05 0-.65-.1-1.45-1.4-1.67-1.8a.63.63 0 0 0-1.13 0c-.37.64-1.18 1.79-1.75 1.85-1.12.14-3.42 0-5.23 0 0 0 .3-1.66-.39-2.27-.68-.6-1.38-1.3-1.9-1.76l-1.4-1.6Z' clip-rule='evenodd'/><path fill='%23000' d='M20.65 22.3v-6.24c0-.38-.31-.68-.7-.68-.37 0-.68.3-.68.68v6.23c0 .38.3.68.69.68.38 0 .69-.3.69-.68ZM17.2 22.3l-.04-6.25a.67.67 0 1 0-1.34.01l.04 6.24a.67.67 0 1 0 1.34 0ZM12.37 16.07l.04 6.22c0 .38.3.68.67.68.37 0 .67-.3.67-.68l-.04-6.23c0-.38-.3-.68-.67-.68-.37 0-.67.31-.67.69Z'/></svg>")
       14 14,
     auto;
-=======
-
->>>>>>> 3f40519cfb6c64b524ba3d9286f9abb2f2d7ec9e
   font-weight: 500;
 }
 
@@ -113,7 +80,6 @@ header nav .menu ul li a {
     auto;
   text-decoration: none;
 }
-<<<<<<< HEAD
 
 /* header */
 
@@ -143,19 +109,12 @@ header nav .menu ul li a {
   width: 14vw;
 }
 .box h1 {
-  position: absolute;
-  opacity: 0;
-  transform: scale(0.9);
-  font-size: 2rem;
   color: #493cb5;
   font-weight: bold;
+  font-size: 2.4rem;
   margin: 0px 0px 0px 0px;
   z-index: 1;
-  transition: all 0.3s ease-in-out;
-}
-.box .one {
-  opacity: 1;
-  transform: scale(1);
+  position: absolute;
 }
 .box button {
   border: none;
@@ -418,143 +377,20 @@ header nav .menu ul li a {
   border-radius: 8px;
   font-weight: bold;
   font-size: 16px;
-=======
-.button a:hover {
-  /* box-shadow: 2px 2px #07f6a0;
-  background-color: #1b4587;
-  color: #fff; */
-}
-
-.heroBanner {
-  /* border: 5px solid green; */
-  height: 100vh;
-  background-color: #584add;
-  align-items: start;
-  margin: 0;
-  width: 100%;
-  position: relative;
-  background-image: url("../../assets/image/hero-banner/background/1.png");
-
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.heroBanner-2 {
-  background-image: url("../../assets/image/hero-banner/background/2.png");
-}
-.heroBanner .box {
-  width: 1100px;
-  /* border: 1px solid red; */
-  transform: translate3d(38vw, -118vh, 0px);
-}
-
-.heroBanner .first-shape {
-  height: 100vh;
-}
-.heroBanner .second-shape {
-  width: 30vw;
-}
-.heroBanner .third-shape {
-  width: 34vw;
-}
-
-.heroBanner .hero-logo {
-  max-width: 100%;
-  height: auto;
-  margin: 0px 0px 48px 0px;
-}
-.heroBanner h1 {
-  color: #493cb5;
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 62px;
-  margin: 0px 0px 0px 0px;
-  z-index: 1;
-  position: relative;
-}
-.heroBanner button {
-  border: none;
-  padding: 16px 40px;
-  border-radius: 8px;
-  font-weight: bold;
-  font-size: 24px;
->>>>>>> 3f40519cfb6c64b524ba3d9286f9abb2f2d7ec9e
   background: linear-gradient(90deg, #ff426b 0%, #d5199c 57%, #ff7bcd 100%);
   color: #fff;
   letter-spacing: 4px;
   line-height: 33px;
-<<<<<<< HEAD
-=======
-
->>>>>>> 3f40519cfb6c64b524ba3d9286f9abb2f2d7ec9e
   display: block;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='28' height='29' fill='none' viewBox='0 0 28 29'><path fill='%23fff' d='M6.84 21.83c-.47-.6-1.05-1.82-2.07-3.34-.58-.83-2.01-2.41-2.45-3.23a2.1 2.1 0 0 1-.25-1.67 2.2 2.2 0 0 1 2.39-1.67c.85.18 1.63.6 2.25 1.2.43.41.82.85 1.18 1.32.27.34.33.47.63.85.3.39.5.77.35.2-.11-.83-.31-2.23-.6-3.48-.21-.95-.26-1.1-.46-1.82s-.32-1.32-.54-2.13c-.2-.8-.35-1.62-.46-2.44a4.7 4.7 0 0 1 .43-3.08c.58-.55 1.44-.7 2.17-.37a4.4 4.4 0 0 1 1.57 2.17c.43 1.07.72 2.19.86 3.33.27 1.67.79 4.1.8 4.6 0-.61-.11-1.91 0-2.5.12-.6.54-1.1 1.12-1.33.5-.15 1.02-.19 1.53-.1.52.1.98.4 1.29.83.38.98.6 2 .63 3.05.04-.91.2-1.82.47-2.7.28-.39.68-.67 1.15-.8.55-.1 1.11-.1 1.66 0 .46.15.85.44 1.14.82.35.88.56 1.82.63 2.77 0 .23.12-.65.48-1.24a1.67 1.67 0 1 1 3.17 1.07v3.77c-.06.97-.2 1.94-.4 2.9-.29.85-.7 1.65-1.2 2.38-.8.9-1.48 1.92-1.98 3.02a6.67 6.67 0 0 0 .03 3.2c-.68.07-1.37.07-2.05 0-.65-.1-1.45-1.4-1.67-1.8a.63.63 0 0 0-1.13 0c-.37.64-1.18 1.79-1.75 1.85-1.12.14-3.42 0-5.23 0 0 0 .3-1.66-.39-2.27-.68-.6-1.38-1.3-1.9-1.76l-1.4-1.6Z'/><path stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='2.25' d='M6.84 21.83c-.47-.6-1.05-1.82-2.07-3.34-.58-.83-2.01-2.41-2.45-3.23a2.1 2.1 0 0 1-.25-1.67 2.2 2.2 0 0 1 2.39-1.67c.85.18 1.63.6 2.25 1.2.43.41.82.85 1.18 1.32.27.34.33.47.63.85.3.39.5.77.35.2-.11-.83-.31-2.23-.6-3.48-.21-.95-.26-1.1-.46-1.82s-.32-1.32-.54-2.13c-.2-.8-.35-1.62-.46-2.44a4.7 4.7 0 0 1 .43-3.08c.58-.55 1.44-.7 2.17-.37a4.4 4.4 0 0 1 1.57 2.17c.43 1.07.72 2.19.86 3.33.27 1.67.79 4.1.8 4.6 0-.61-.11-1.91 0-2.5.12-.6.54-1.1 1.12-1.33.5-.15 1.02-.19 1.53-.1.52.1.98.4 1.29.83.38.98.6 2 .63 3.05.04-.91.2-1.82.47-2.7.28-.39.68-.67 1.15-.8.55-.1 1.11-.1 1.66 0 .46.15.85.44 1.14.82.35.88.56 1.82.63 2.77 0 .23.12-.65.48-1.24a1.67 1.67 0 1 1 3.17 1.07v3.77c-.06.97-.2 1.94-.4 2.9-.29.85-.7 1.65-1.2 2.38-.8.9-1.48 1.92-1.98 3.02a6.67 6.67 0 0 0 .03 3.2c-.68.07-1.37.07-2.05 0-.65-.1-1.45-1.4-1.67-1.8a.63.63 0 0 0-1.13 0c-.37.64-1.18 1.79-1.75 1.85-1.12.14-3.42 0-5.23 0 0 0 .3-1.66-.39-2.27-.68-.6-1.38-1.3-1.9-1.76l-1.4-1.6Z' clip-rule='evenodd'/><path fill='%23000' d='M20.65 22.3v-6.24c0-.38-.31-.68-.7-.68-.37 0-.68.3-.68.68v6.23c0 .38.3.68.69.68.38 0 .69-.3.69-.68ZM17.2 22.3l-.04-6.25a.67.67 0 1 0-1.34.01l.04 6.24a.67.67 0 1 0 1.34 0ZM12.37 16.07l.04 6.22c0 .38.3.68.67.68.37 0 .67-.3.67-.68l-.04-6.23c0-.38-.3-.68-.67-.68-.37 0-.67.31-.67.69Z'/></svg>")
       14 14,
     auto;
-<<<<<<< HEAD
   text-decoration: none;
   text-align: center;
   width: 20%;
   margin: 0vh 1.4vw;
 }
 @media only screen and (max-width: 991px) {
-=======
-  z-index: 1;
-  position: absolute;
-  bottom: 5vh;
-  right: 32vw;
-}
-
-@media only screen and (max-width: 1366px) {
-  .heroBanner .first-shape {
-    width: 36vw;
-  }
-  .heroBanner .second-shape {
-    width: 56vh;
-  }
-  .heroBanner .third-shape {
-    width: 63vh;
-  }
-  .heroBanner .box {
-    transform: translate3d(40vw, -108vh, 0px);
-    width: 800px;
-  }
-  .heroBanner .hero-logo {
-    width: 200px;
-  }
-
-  .heroBanner button {
-    padding: 12px 34px;
-    font-size: 18px;
-
-    right: 31.7vw;
-  }
-}
-
-@media only screen and (max-width: 1280px) {
-  .heroBanner .box {
-    transform: translate3d(40vw, -60vh, 0px);
-    width: 730px;
-  }
-  .heroBanner .hero-logo {
-    margin: 0px 0px 34px 0px;
-    width: 160px;
-  }
-  .heroBanner button {
-    padding: 5px 28px;
-    font-size: 14px;
-    right: 38.7vw;
-    bottom: 8vh;
-    letter-spacing: 2px;
-  }
-}
-
-@media only screen and (max-width: 992px) {
-  .heroBanner {
-    display: none;
-  }
->>>>>>> 3f40519cfb6c64b524ba3d9286f9abb2f2d7ec9e
   header nav {
     height: 45px;
     padding: 0px 10px;
@@ -571,11 +407,7 @@ header nav .menu ul li a {
     background-color: #584add;
     position: fixed;
     width: 100%;
-<<<<<<< HEAD
 
-=======
-    /* height: 100%; */
->>>>>>> 3f40519cfb6c64b524ba3d9286f9abb2f2d7ec9e
     bottom: -10%;
 
     left: 0%;
@@ -588,26 +420,14 @@ header nav .menu ul li a {
     bottom: 0%;
   }
   header nav .menu ul {
-<<<<<<< HEAD
-=======
-    /* flex-direction: column; */
-    /* height: 100%; */
-    /*justify-content: space-evenly;*/
->>>>>>> 3f40519cfb6c64b524ba3d9286f9abb2f2d7ec9e
     justify-content: space-around;
   }
 
   header nav .menu ul li {
     padding: 10px 0px;
-<<<<<<< HEAD
 
     border: 0px solid #ffffff;
 
-=======
-    /*border-bottom: 2px dotted #050a30;*/
-    border: 0px solid #ffffff;
-    /* background-color: #07f6a0; */
->>>>>>> 3f40519cfb6c64b524ba3d9286f9abb2f2d7ec9e
     text-align: center;
   }
 
@@ -628,7 +448,6 @@ header nav .menu ul li a {
     letter-spacing: 3px;
     margin: 0px 7px 0px 0px;
   }
-<<<<<<< HEAD
 
   .box .hero-logo {
     width: 60vw;
@@ -724,6 +543,4 @@ header nav .menu ul li a {
     font-size: 14px;
     padding: 2px 0px;
   }
-=======
->>>>>>> 3f40519cfb6c64b524ba3d9286f9abb2f2d7ec9e
 }
