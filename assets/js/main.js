@@ -128,34 +128,14 @@ document.addEventListener("DOMContentLoaded", (event) => {
       "<"
     );
 
-    tl.to(".box h1", {
-      opacity: options.text.startOp,
-      duration: options.text.startDur,
-      ease: options.text.startEase,
-    });
-    tl.fromTo(
-      ".box h1",
-      {
-        text: options.text.oldText,
-        fontSize: options.text.oldSize,
-        duration: options.text.textStartDur,
-      },
-      {
-        text: options.text.newText,
-        fontSize: options.text.newSize,
-        duration: options.text.textEndDur,
-      }
-    );
+    //  text   here
+    tl.to(".one", { opacity: 1, scale: 1, duration: 2 })
+      .to(".one", { opacity: 0, scale: 0.9, duration: 1 })
 
-    tl.to(
-      ".box h1",
-      {
-        opacity: options.text.endOp,
-        duration: options.text.endDur,
-        ease: options.text.endEase,
-      },
-      "<"
-    );
+      .to(".two", { opacity: 1, scale: 1, duration: 2 })
+      .to(".two", { opacity: 0, scale: 0.9, duration: 1 })
+
+      .to(".three", { opacity: 1, scale: 1, duration: 2 });
 
     // reverse code here
     tl.add("reversePhase"); // Label add kiya
@@ -172,29 +152,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
       { x: 0, opacity: options.firstShape.startOp },
       "reversePhase"
     );
-    tl.to(
-      ".box h1",
-      {
-        opacity: options.text.startOp,
-        duration: options.text.startDur,
-        ease: options.text.startEase,
-      },
-      "reversePhase"
-    );
-    tl.to(".box h1", {
-      text: options.text.oldText,
-      fontSize: options.text.oldSize,
-      duration: options.text.textStartDur,
-    });
-    tl.to(
-      ".box h1",
-      {
-        opacity: options.text.endOp,
-        duration: options.text.endDur,
-        ease: options.text.endEase,
-      },
-      "reversePhase"
-    );
+
+    // text here
+
     tl.to(
       ".page1 svg path:nth-child(2)",
 
@@ -221,6 +181,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
       },
       "reversePhase"
     );
+    tl.to(".three", { opacity: 1, scale: 1, duration: 1 })
+      .to(".three", { opacity: 0, scale: 0.9, duration: 1 })
+      .to(".two", { opacity: 1, scale: 1, duration: 2 })
+      .to(".two", { opacity: 0, scale: 0.9, duration: 1 })
+      .to(".one", { opacity: 1, scale: 1, duration: 2 });
 
     return tl;
   }

@@ -109,12 +109,19 @@ header nav .menu ul li a {
   width: 14vw;
 }
 .box h1 {
+  position: absolute;
+  opacity: 0;
+  transform: scale(0.9);
+  font-size: 2rem;
   color: #493cb5;
   font-weight: bold;
-  font-size: 2.4rem;
   margin: 0px 0px 0px 0px;
   z-index: 1;
-  position: absolute;
+  transition: all 0.3s ease-in-out;
+}
+.box .one {
+  opacity: 1;
+  transform: scale(1);
 }
 .box button {
   border: none;
